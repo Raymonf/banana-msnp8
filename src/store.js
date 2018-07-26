@@ -102,39 +102,6 @@ export default new Vuex.Store({
   },
   actions: {
     msnp_receive: (context, message) => {
-      /*var data = JSON.parse(message);
-
-			if(data.status != 200) {
-				context.commit('setAlertMessage', data.action);
-				bus.$emit('alertOpen', '');
-			} else {
-				context.commit('setCurrentAction', data.action);
-
-				if(data.action == "setName")
-				{
-					bus.$emit('toSetName');
-				} else if(data.action == "waitingRoom")
-				{
-					bus.$emit('toWaitingRoom');
-				} else
-
-				// Host
-				if(data.action == "toHostWaitingRoom") {
-					context.commit('setPlayerList', []);
-					context.commit('setSessionPin', data.sessionId);
-					bus.$emit('toHostWaitingRoom');
-				} else if(data.action == "addPlayerToWaitingRoom") {
-					// add to player list
-					context.commit('addPlayerToPlayerList', data.player);
-				} else if(data.action  == "playerLeftWaitingRoom") {
-					console.log(context);
-					console.log(context.state);
-					var newList = context.state.playerList.filter(function(e) { return e !== data.player })
-					context.commit('setPlayerList', newList);
-					context.commit('setSnackbarMessage', '<b>' + data.player + '</b> left the game.');
-					bus.$emit('snackbarOpen');
-				}
-			}*/
     }
   }
 });
